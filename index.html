@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .go-back {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #e74c3c;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="go-back" onclick="goBack()">🔙</div>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigVgMnlG_5hOVlIXKp4fmSCMdCvpex7PjaXAbPrF7wp3QoyymTtZFwT-phG5qcouocja-_cw77XKWnYFymbnrMJ5pjA74wTNv8Upju0591lNlVgNhsxde6OlbMUCbJiqY7ucwvJba1fzd3HNxjOXtvL2cIeAXsZVfOTno29_VvqKCEAaTw2iAy4G_92pbB/s2828/error.png" alt="Error Image">
+        <h1>__________⚠️__________
+            
+            Oops! Something went wrong!</h1>
+        <p>We're sorry, but there seems to be an issue. Please try again later...</p>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
